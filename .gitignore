@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/runs/
+/designware/
+/learn/
+/papers/
+# 实验产物保存在本地；目录说明随代码保存。
+/experiments/*
+!/experiments/README.md
+.pytest_cache/
