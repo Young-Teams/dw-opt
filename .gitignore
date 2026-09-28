@@ -6,6 +6,8 @@ __pycache__/
 /designware/
 /learn/
 /papers/
+# 综合工艺库及其配套文件保留在本地，不纳入 Git。
+/.codex/skills/syn-dc/assets/libs/
 # 实验产物保存在本地；目录说明随代码保存。
 /experiments/*
 !/experiments/README.md

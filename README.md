@@ -39,6 +39,8 @@ dw-opt/
 
 `papers/`、`learn/`、`designware/` 由根目录 `.gitignore` 排除；普通 Git 克隆不包含这些材料或实验结果。它们可作为本地参考资源使用，需要跨机器复现时另行准备，任务记录应说明依赖及版本。
 
+`syn-dc` 的工艺库目录 `.codex/skills/syn-dc/assets/libs/` 及其中的配套文件同样不纳入 Git。克隆后需自行准备库文件，放入约定路径，或通过 `--target-db` / `SYN_DC_TARGET_DB` 指定外部库；runner 不会自动下载工艺库。
+
 ## 开发与实验
 
 1. 确定目标、范围、验收与适用的资源预算。持续跟踪的任务使用 [task.md 模板](docs/templates/task.md)，保存到 `tasks/<任务名>/task.md`。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "sim_vcs"
+  short_description: "Run VCS simulation with logs and waveforms"
+  default_prompt: "Use $sim-vcs to simulate this testbench and RTL, preserve logs and waveforms, and retain intermediate files unless cleanup is requested."

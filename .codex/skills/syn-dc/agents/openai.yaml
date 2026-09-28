@@ -1,0 +1,4 @@
+interface:
+  display_name: "syn_dc"
+  short_description: "Run DC synthesis with optional report parsing"
+  default_prompt: "Use $syn-dc to synthesize this RTL design and parse normalized reports only if requested."

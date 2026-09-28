@@ -1,0 +1,12 @@
+# 启动入口：复制到本次 Run 根目录，dc_shell 在该目录启动时自动加载。
+set_app_var sh_continue_on_error false
+set SYN_DC_SETUP_LOADED false
+
+# 相对于本文件定位配置；宿主机与 Docker 内使用相同的 Run 目录结构。
+set SETUP_DIR [file dirname [file normalize [info script]]]
+
+# 先读取本次综合的参数，再将这些参数应用到 DC 环境。
+source [file join $SETUP_DIR config common_setup.tcl]
+source [file join $SETUP_DIR config dc_setup.tcl]
+
+set SYN_DC_SETUP_LOADED true
