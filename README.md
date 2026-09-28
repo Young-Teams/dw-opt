@@ -16,6 +16,7 @@ dw-opt/
 ├── experiments/             # 本地运行产物，Git 仅保留 README.md
 ├── docs/                    # 代码审查约定与任务模板
 ├── AGENTS.md                # Codex 项目约定
+├── .codex/agents/           # 项目自定义 Agent，包含独立审查角色
 ├── .codex/skills/           # 项目技能及配套工具
 ├── .agents/skills           # 指向 ../.codex/skills 的发现入口
 ├── papers/                  # 本地论文与参考材料，不纳入 Git
@@ -59,6 +60,8 @@ dw-opt/
 - [syn-dc](.agents/skills/syn-dc/SKILL.md)：执行 DC 综合并保存配置、报告和网表。
 - [wavedrom](.agents/skills/wavedrom/SKILL.md)：绘制时序图。
 - [grill-me](.agents/skills/grill-me/SKILL.md)：显式调用方案访谈，使用 `grilling` 工作流。
+
+独立代码审查默认通过可查看过程的 subagent 线程执行，角色定义见 [code_reviewer](.codex/agents/code_reviewer.toml)。历史隔离、委派内容与结果记录见[代码审查约定](docs/code-review.md)。
 
 查看 EDA 脚本参数，以下命令不会启动仿真或综合：
 
