@@ -1,0 +1,4 @@
+interface:
+  display_name: "WaveDrom 波形图"
+  short_description: "Create and validate digital timing diagrams with WaveDrom."
+  default_prompt: "Use $wavedrom to create and render a digital timing diagram from my signal behavior."
